@@ -1,47 +1,27 @@
-# Calc.js API Reference
+# Graph.js API Reference
 
-The world's smallest JavaScript calculator library (probably).
-
-## Usage
-
-```javascript
-var c1 = Calc(2);
-var c2 = Calc(10);
-
-c1.add(6);
-
-c2.minus(1);
-
-c1.divide(2);
-
-
-console.log(c1.getVal()) // Prints 4
-console.log(c2.getVal()) // Prints 9
-```
+A bar graph in d3
 
 ## API Functions
 
 
 
-\# *Calc*(number)
+\# *Calc*()
 
-> Constructs a Calc object with the current value set to `number`
+> Constructs a Calc object with default values
 
-\# *Calc*.**getVal**()
-> Returns the current value stored by the calc instance.
+\# *Calc*.**width**(width)
+> Sets the width of the graph. Width must be an int
 
-\# *Calc*.**plus**(number)
-> Sets the current value of the calc instance to the current value plus `number` and returns that calc instance.
+\# *Calc*.**height**(height)
+> Sets the height of the graph. Height must be an int
 
-\# *Calc*.**minus**(number)
-> Sets the current value of the calc instance to the current value minus `number` and returns that calc instance.
+\# *Calc*.**data**(data)
+> Sets the data for the graph. Data must be in structured array form with x and y keys
 
+\# *Calc*.**margin**(margins)
+> Sets the margins of the graph. Margins must be defined as an array with left, right, top, and bottom values
 
-\# *Calc*.**times**(number)
-> Sets the current value of the calc instance to the current value times `number` and returns that calc instance.
+\# *Calc*.**color**(rgbValue)
+> Sets the bars on the chart to the color of the specified rbg string value
 
-\# *Calc*.**divide**(number)
-> Sets the current value of the calc instance to the current value divided by `number` and returns that calc instance.
-
-\# *Calc*.**clear**()
-> Sets the current value of the calc instance to 0
